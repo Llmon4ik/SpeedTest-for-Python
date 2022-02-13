@@ -1,6 +1,12 @@
 from speedtest import Speedtest
 
-# Test Commit and git and github
+selection = input("""Please enter the number to get the speed in your value
+1 - Bit
+2 - Kilobyte
+3 - Megabit
+4 - Megabyte 
+
+Selection: """)
 
 st = Speedtest()
 
@@ -24,14 +30,6 @@ speed_key = {
 }
 
 ping = st.results.ping
-
-selection = input("""Please enter the number to get the speed in your value
-1 - Bit
-2 - Kilobyte
-3 - Megabit
-4 - Megabyte 
-
-Selection: """)
 
 print("""
 Download: {}
